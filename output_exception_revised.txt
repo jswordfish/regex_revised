@@ -1,1 +1,1 @@
-testFindNoOfOccurrences1Boundary=false
+testFindNoOfOccurrences1Exception=false

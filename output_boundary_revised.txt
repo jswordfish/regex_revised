@@ -1,2 +1,2 @@
 testFindNoOfOccurrences1Boundary=false
-testFindNoOfOccurrences2=true
+testFindNoOfOccurrences2Boundary=true

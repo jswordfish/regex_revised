@@ -49,12 +49,12 @@ public class TestPatternFinder_Boundary {
 	    }
 	    
 	    @Test
-	    public void testFindNoOfOccurrences2() throws Exception{
+	    public void testFindNoOfOccurrences2Boundary() throws Exception{
 	        String input = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 	        Integer no = finder.findNoOfOccurrences(input);
 	        
 	        File file = new File("output_boundary_revised.txt");
-	        FileUtils.write(file, "\ntestFindNoOfOccurrences2="+(no==0?"true":"false"), true);
+	        FileUtils.write(file, "\ntestFindNoOfOccurrences2Boundary="+(no==0?"true":"false"), true);
 	         
 	         Assert.assertEquals(no, new Integer(0));
 	        

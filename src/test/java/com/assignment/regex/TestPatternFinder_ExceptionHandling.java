@@ -29,7 +29,7 @@ public class TestPatternFinder_ExceptionHandling {
 	
 	
 	@Test(expected=AssignmentException.class)
-    public void testFindNoOfOccurrences1Boundary() throws Exception{
+    public void testFindNoOfOccurrences1Exception() throws Exception{
         String input = null;
         /**
          * Whether the implementation provides reads the right no of occurrences
@@ -40,16 +40,16 @@ public class TestPatternFinder_ExceptionHandling {
 		} catch (AssignmentException e) {
 			// TODO Auto-generated catch block
 			File file = new File("output_exception_revised.txt");
-			FileUtils.write(file, "testFindNoOfOccurrences1Boundary=true", true);
+			FileUtils.write(file, "testFindNoOfOccurrences1Exception=true", true);
 			throw e;
 		}
 		catch(Exception e){
 			File file = new File("output_exception_revised.txt");
-			FileUtils.write(file, "testFindNoOfOccurrences1Boundary=false", true);
+			FileUtils.write(file, "testFindNoOfOccurrences1Exception=false", true);
 			throw e;
 		}
 		
 		File file = new File("output_exception_revised.txt");
-		FileUtils.write(file, "testFindNoOfOccurrences1Boundary=false", true);
+		FileUtils.write(file, "testFindNoOfOccurrences1Exception=false", true);
     }
 }
