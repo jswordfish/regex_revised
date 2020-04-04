@@ -1,0 +1,1 @@
+create table regex_data (pattern varchar(200), noOfOccurrences integer)
